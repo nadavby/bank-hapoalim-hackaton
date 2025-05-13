@@ -17,8 +17,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-// MongoDB connection with hardcoded connection string
-const MONGODB_URI = 'mongodb://localhost:27017/bank-hapoalim-student-db';
+// MongoDB connection options:
+
+// OPTION 1: Connexion à MongoDB local (assurez-vous que MongoDB est installé et lancé)
+const MONGODB_URI = 'mongodb://127.0.0.1:27017/bank-hapoalim-student-db';
+
+// OPTION 2: Connexion à MongoDB Atlas (remplacez par vos identifiants)
+// const MONGODB_URI = 'mongodb+srv://<username>:<password>@cluster0.mongodb.net/bank-hapoalim-student-db?retryWrites=true&w=majority';
 
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
