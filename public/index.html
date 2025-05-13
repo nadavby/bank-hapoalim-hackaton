@@ -18,7 +18,7 @@
         <h2>🔎 Student Profile</h2>
         <p class="form-intro">Fill out the short form below to help us understand your academic and professional background so we can match you with relevant student jobs and opportunities.</p>
         
-        <form id="studentProfileForm">
+        <form id="studentProfileForm" enctype="multipart/form-data">
           <div class="form-group">
             <label for="fieldOfStudy">Field of Study</label>
             <input type="text" id="fieldOfStudy" name="fieldOfStudy" placeholder="e.g., Computer Science, Psychology, Business Administration" required>
@@ -58,9 +58,14 @@
           </div>
           
           <div class="form-group">
-            <label for="linkedinOrResume">LinkedIn / Resume Upload</label>
+            <label for="linkedinOrResume">LinkedIn Profile</label>
             <input type="text" id="linkedinOrResume" name="linkedinOrResume" placeholder="LinkedIn profile URL">
-            <p class="file-upload-note">Or upload your CV (PDF/DOC): <input type="file" id="resumeUpload" accept=".pdf,.doc,.docx"></p>
+          </div>
+          
+          <div class="form-group file-upload">
+            <label for="resumeUpload">Upload your CV (PDF/DOC)</label>
+            <input type="file" id="resumeUpload" name="resumeFile" accept=".pdf,.doc,.docx">
+            <p class="file-upload-note">Accepted formats: PDF, DOC, DOCX (max 5MB)</p>
           </div>
           
           <div class="form-actions">

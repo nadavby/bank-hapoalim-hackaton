@@ -36,8 +36,16 @@ const StudentProfileSchema = new mongoose.Schema({
   },
   resumeFile: {
     filename: String,
+    originalname: String,
     contentType: String,
-    path: String
+    size: Number,
+    uploadDate: {
+      type: Date,
+      default: Date.now
+    },
+    data: Buffer,
+    path: String,
+    url: String
   },
   createdAt: {
     type: Date,
