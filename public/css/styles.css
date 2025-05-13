@@ -100,29 +100,30 @@ input:focus, select:focus, textarea:focus {
   box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.2);
 }
 
-.file-upload-note {
-  margin-top: 8px;
-  font-size: 0.9rem;
-  color: #666;
+.file-upload {
+  margin-bottom: 20px;
 }
 
-input[type="file"] {
-  width: auto;
-  padding: 0;
-  border: none;
+.file-upload input[type="file"] {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.file-upload-note {
+  font-size: 0.85rem;
+  color: #555;
   margin-top: 5px;
 }
 
-/* File Upload Enhancements */
 .clear-file {
-  background-color: #f0f0f0;
-  border: none;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
   border-radius: 4px;
   padding: 2px 8px;
   margin-left: 10px;
   cursor: pointer;
-  font-size: 0.8rem;
-  color: #666;
+  font-size: 0.85rem;
 }
 
 .clear-file:hover {
@@ -191,4 +192,38 @@ footer {
   h1 {
     font-size: 2rem;
   }
+}
+
+/* Ajout des styles pour les liens de téléchargement */
+.resume-download-links {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  border-left: 3px solid #0072b3;
+}
+
+.resume-download-links p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.resume-download-links ul {
+  padding-left: 20px;
+}
+
+.resume-download-links li {
+  margin-bottom: 8px;
+}
+
+.resume-download-links a {
+  color: #0072b3;
+  text-decoration: none;
+  display: inline-block;
+  padding: 3px 0;
+}
+
+.resume-download-links a:hover {
+  color: #004e7c;
+  text-decoration: underline;
 } 
