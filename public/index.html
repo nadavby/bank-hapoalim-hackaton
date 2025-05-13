@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poalim Start - Student Profile</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Poalim Start</h1>
+      <p class="tagline">Your gateway to career opportunities, professional guidance, and exclusive tools</p>
+    </header>
+    
+    <main>
+      <div class="form-container">
+        <h2>🔎 Student Profile</h2>
+        <p class="form-intro">Fill out the short form below to help us understand your academic and professional background so we can match you with relevant student jobs and opportunities.</p>
+        
+        <form id="studentProfileForm">
+          <div class="form-group">
+            <label for="fieldOfStudy">Field of Study</label>
+            <input type="text" id="fieldOfStudy" name="fieldOfStudy" placeholder="e.g., Computer Science, Psychology, Business Administration" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="university">University / College</label>
+            <input type="text" id="university" name="university" placeholder="Enter the name of your academic institution" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="yearOfStudy">Year of Study</label>
+            <select id="yearOfStudy" name="yearOfStudy" required>
+              <option value="" disabled selected>Select your year of study</option>
+              <option value="First Year">First Year</option>
+              <option value="Second Year">Second Year</option>
+              <option value="Third Year">Third Year</option>
+              <option value="Fourth Year">Fourth Year</option>
+              <option value="Master's">Master's</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="availability">Availability for Work</label>
+            <input type="text" id="availability" name="availability" placeholder="e.g., Sun–Wed, 2pm–6pm; weekends only" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="interests">Professional Interests</label>
+            <input type="text" id="interests" name="interests" placeholder="e.g., Marketing, Software Development, UX Design, Event Management, Editing" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="workExperience">Work Experience</label>
+            <textarea id="workExperience" name="workExperience" placeholder="Tell us briefly where you've worked before, or what experience you've gained."></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="linkedinOrResume">LinkedIn / Resume Upload</label>
+            <input type="text" id="linkedinOrResume" name="linkedinOrResume" placeholder="LinkedIn profile URL">
+            <p class="file-upload-note">Or upload your CV (PDF/DOC): <input type="file" id="resumeUpload" accept=".pdf,.doc,.docx"></p>
+          </div>
+          
+          <div class="form-actions">
+            <button type="submit" class="submit-btn">✅ Submit Profile</button>
+          </div>
+        </form>
+        
+        <div id="successMessage" class="success-message hidden">
+          <h3>Thanks for submitting your profile!</h3>
+          <p>You'll now gain access to personalized job offers, career tips, and exclusive student content – all via the Poalim Start portal inside the app.</p>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <p>&copy; Bank Hapoalim - Poalim Start Program</p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html> 
